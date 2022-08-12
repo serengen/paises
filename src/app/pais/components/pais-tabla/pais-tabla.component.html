@@ -1,0 +1,10 @@
+<table class="table table-hover">
+    <tbody>
+        <tr *ngFor="let pais of paises">
+            <td><img class="small-flag" src="{{pais.flags.png}}" alt=""></td>
+            <td><b>Capital, Pais:</b>  {{pais.capital}}, {{pais.name.common}}</td>
+            <td><b>Población:</b>  {{pais.population | number}}</td>
+            <td><a [routerLink]="['/pais',pais.cca2]" >Ver...</a></td>
+        </tr>
+    </tbody>
+</table>

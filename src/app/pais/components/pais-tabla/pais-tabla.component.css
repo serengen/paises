@@ -1,0 +1,11 @@
+@media screen and (max-width: 600px) {
+
+    tr{
+        display: flex;
+        align-items: center;
+    }
+    tbody tr{
+        display: grid;
+    }
+
+}

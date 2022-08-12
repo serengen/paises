@@ -1,0 +1,15 @@
+
+@media screen and (max-width: 600px) {
+    div{
+        display: flex;
+        flex-direction: column;
+    }
+    ul{
+        display: flex;
+        flex-direction: row;
+    }
+    li{
+        width: fit-content;
+
+    }
+}
