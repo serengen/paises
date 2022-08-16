@@ -17,14 +17,19 @@ export class PorRegionComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  getClaseCSS(region: string): string{
+    return (region == this.regionActiva) ? 'btn btn-primary btn-sm':'btn btn-outline-primary btn-sm';
+
+  }
+
   activarRegion(region:string){
     this.regionActiva = region;
-  this.paisService.buscarRegion(this.regionActiva).subscribe(resp =>{
+    this.paisService.buscarRegion(this.regionActiva).subscribe(resp =>{
     console.log(resp);
     this.paises = resp;
-  },(err)=>{
-    this.paises = [];
-  });
+    },(err)=>{
+      this.paises = [];
+    });
 }
 
 

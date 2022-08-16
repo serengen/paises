@@ -1,3 +1,6 @@
+li{
+    cursor: pointer;
+}
 
 @media screen and (max-width: 600px) {
     div{
@@ -10,6 +13,6 @@
     }
     li{
         width: fit-content;
-
+        cursor: pointer;
     }
 }
